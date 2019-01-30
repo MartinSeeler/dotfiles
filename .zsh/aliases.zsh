@@ -10,7 +10,7 @@ alias -g ......='../../../../..'
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Development/projects"
+alias p="cd ~/Projects"
 
 # List directory contents
 alias lsa='ls -lah'

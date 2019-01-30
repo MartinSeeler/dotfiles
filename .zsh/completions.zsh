@@ -1,5 +1,3 @@
-# The following lines were added by compinstall
-
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' menu select=2
@@ -13,4 +11,9 @@ if [ $(date +'%j') != $updated_at ]; then
 else
   compinit -C -i
 fi
-# End of lines added by compinstall
+
+zmodload -i zsh/complist
+
+setopt auto_list # automatically list choices on ambiguous completion
+setopt auto_menu # automatically use menu completion
+setopt always_to_end # move cursor to end if word had one match

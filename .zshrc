@@ -5,7 +5,10 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/async.zsh
 source ~/.zsh/pure.zsh
+
+# Load plugins
 source ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Make vim-like behaviour
 bindkey -e

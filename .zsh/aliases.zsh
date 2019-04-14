@@ -38,5 +38,5 @@ alias zz='fasd_cd -d -i' # cd with interactive selection
 # Utils
 alias please='sudo'
 alias cls='clear'
-alias bubu="brew update && brew upgrade --all && brew cleanup"
+alias bubu="brew update && brew upgrade"
 alias y='tr -d '\''\n'\'' | pbcopy'

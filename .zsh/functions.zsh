@@ -31,3 +31,11 @@ function nukeport() {
   shift 1
   lsof -i :$port -Fp | cut -dp -f2 | xargs kill $@
 }
+
+# CONDA
+# Taken from https://github.com/caiogondim/bullet-train.zsh/issues/282#issuecomment-516266791
+prompt_conda() {
+  if [[ ! $(conda info | awk '{print $4}' | sed -n '2p') == 'None' ]]; then
+    prompt_segment $BULLETTRAIN_VIRTUALENV_BG $BULLETTRAIN_VIRTUALENV_FG $BULLETTRAIN_VIRTUALENV_PREFIX" $(conda info | awk '{print $4}' | sed -n '2p')"
+  fi
+}

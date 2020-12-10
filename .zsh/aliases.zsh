@@ -14,9 +14,9 @@ alias p="cd ~/Projects"
 
 # List directory contents
 alias lsa='ls -lah'
-alias l='ls -lah'
-alias ll='ls -lh'
-alias la='ls -lAh'
+alias l='ls -lahG'
+alias ll='ls -lhG'
+alias la='ls -lAhG'
 
 # Network
 alias webip="dig +short myip.opendns.com @resolver1.opendns.com"

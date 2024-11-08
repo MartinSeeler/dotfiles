@@ -36,7 +36,16 @@ alias c='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 
 # Utils
-alias please='sudo'
+alias please='sudo !!'
+alias fucking='sudo'
+alias simonsays='sudo'
+alias wtf='git blame'
+alias firebomb='kill -9'
+# alias serve='python3 -m http.server 8001'
 alias cls='clear'
 alias bubu="brew update && brew upgrade"
 alias y='tr -d '\''\n'\'' | pbcopy'
+
+# Neovim
+alias v='nvim'
+#alias vim='nvim'
